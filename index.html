@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kyaw Naing Win</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-1.jpg" alt="John Doe profile picture" class="profile" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kyaw Naing Win</h1>
+        <p class="section__text__p2">Student at Educlaas</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('.')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kyaw-naing-win-458702250/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/KNaingrW'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+               <p>HTML, CSS and JavaScript</p>
+               <p>Java, SpringMVC and MySQL</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BTEC Level 3 Diploma<br />BTEC Level 5 Higher National Diploma</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              I'm Kyaw Naing Win, a software developer who's all about building awesome websites. 
+              I've been diving into the world of code for a while now, and let me tell you, 
+              I'm hooked! There's just something so satisfying about taking a blank screen and 
+              turning it into a dynamic, user-friendly site. I'm all about staying up-to-date 
+              with the latest tech trends and making sure my sites not only look great but run 
+              like a dream too. Whether you're a business owner looking to boost your online 
+              presence or just someone with a cool idea itching to come to life, I'm here to 
+              help make it happen!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/html.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/CSS.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/react.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React JS</h3>
+                  <div class="progress-container1">
+                      <div class="progress-bar1"></div>
+                      <div class="progress-bar-text1">50%</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/java.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Java </h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                  <img src="./assets/mvc.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>SpringMVC</h3>
+                    <div class="progress-container1">
+                        <div class="progress-bar1"></div>
+                        <div class="progress-bar-text1">50%</div>
+                    </div>
+                  </div>
+                </article>
+              <article>
+                <img src="./assets/mysql.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI/UX Design</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/wireframe.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Wireframes</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/prototype.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Prototyping</h3>
+                  <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <div class="progress-bar-text">75%</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h3 style="
+            margin: 15px;
+            ">Dobu Martial Arts</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KNaingrW/DoBuMartialArts'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://do-bu-martial-arts.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h3 style="
+            margin: 15px;
+            ">LinkedIn Clone</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KNaingrW/LinkedIn'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://linkedinn-clone-knw.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h3 style="
+            margin: 15px;
+            ">Staybnb</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KNaingrW/Staybnb'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://staybnb-clone-by-knw.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project-4.png"
+            alt="Project 4"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Four</h2>
+        <h3 style="
+            margin: 15px;
+            ">SocialBook | Facebook Clone</h3>
+        <div class="btn-container">
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/KNaingrW/SocialBook'"
+        >
+          Github
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://facebook-alternative-socialbook.netlify.app/'"
+        >
+          Live Demo
+        </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project-5.png"
+            alt="Project 0.1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Five</h2>
+        <h3 style="
+            margin: 15px;
+            ">Netflix-Clone</h3>
+        <div class="btn-container">
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/KNaingrW/Netflix-Clone'"
+        >
+          Github
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://netflix-clone-knw.netlify.app/'"
+        >
+          Live Demo
+        </button>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="button"><a class="more-project" href="https://github.com/KNaingrW">More Project</a></div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">jj446708@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kyaw-naing-win-458702250/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Kyaw Naing Win. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
