@@ -56,6 +56,39 @@
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .details-container ul li {
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .details-container p{
+    font-size: 15px;
+  }
+  
+  .details-container ul li img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  .text-container p{
+    font-size: 15px;
+    text-align: justify;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .details-container,
