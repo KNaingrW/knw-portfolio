@@ -1,3 +1,4 @@
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -7,8 +8,16 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #timeline {
     height: fit-content;
+    margin-top: 4rem; /* Adjusted margin-top */
+  }
+  #projects{
+    margin-bottom: 15rem;
+  }
+  #contact{
+    margin-bottom: 15rem;
   }
 }
 
@@ -22,6 +31,7 @@
   #experience,
   .experience-details-container {
     margin-top: 2rem;
+    
   }
   #profile,
   .section-container {
@@ -47,6 +57,14 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .details-container,
+  .project-container,
+  .contact-info-container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -65,7 +83,8 @@
   }
   .about-containers,
   .contact-info-upper-container,
-  .btn-container {
+  .btn-container,
+  .project-container {
     flex-wrap: wrap;
   }
   .contact-info-container {
@@ -100,4 +119,5 @@
   .text-container {
     text-align: justify;
   }
+ 
 }
