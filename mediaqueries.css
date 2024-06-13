@@ -11,7 +11,7 @@
   #projects,
   #timeline {
     height: fit-content;
-    margin-top: 4rem; /* Adjusted margin-top */
+    margin-top: 5rem; /* Adjusted margin-top */
   }
   #projects{
     margin-bottom: 15rem;
@@ -55,6 +55,8 @@
   .about-containers {
     margin-top: 0;
   }
+  
+  
 }
 @media screen and (min-width: 1200px) {
   .arrow {
@@ -71,13 +73,13 @@
     margin-top: 0;
   }
   .details-container ul li {
-    font-size: 15px;
+    font-size: 14px;
     margin-right: 20px;
     margin-bottom: 10px;
     display: flex;
   }
   .details-container p{
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .details-container ul li img {
@@ -85,9 +87,13 @@
     margin-right: 10px;
   }
   .text-container p{
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
   }
+  #contact{
+    margin-top: 150px;
+  }
+ 
 }
 
 @media screen and (max-width: 900px) {

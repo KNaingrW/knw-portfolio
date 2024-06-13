@@ -362,7 +362,7 @@ section {
   margin-right: 10px;
 }
 .details-container p{
-  font-size: 13px;
+  font-size: 15px;
 }
 .text-container p{
   font-size: 13px;
@@ -400,13 +400,16 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
+  
   justify-content: space-around;
   gap: 0.5rem;
 }
 
 article .icon {
   cursor: default;
+}
+.softskills{
+  margin-top: 10px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 *, *:before, *:after {box-sizing:border-box;}
@@ -424,7 +427,7 @@ article .icon {
 .range {
   position: relative;
   background-color: #ddd;
-  width: 250px;
+  width: 230px;
   height: 20px;
   transform: skew(30deg);
   
@@ -551,8 +554,8 @@ article .icon {
 
 .project-img {
   /* border-radius: 2rem; */
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 
 .project-title {
@@ -596,7 +599,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  
   background-color: #F7F7F7;
   padding: 80px 0;
 
@@ -688,7 +691,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 20vh;
   margin: 0 1rem;
 }
 
